@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Oppimispäiväkirja</title>
+  <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+
+<body>
+  <h1>Oppimispäiväkirja</h1>
+  <form>
+    <fieldset>
+      <legend>Lisää päiväkirjamerkintä</legend>
+      <textarea id="formTitle" type="text" name="title" placeholder="Otsikko"></textarea>
+      <textarea id="formLegend" name="description" placeholder="Kuvaus"></textarea>
+      Aloituspäivämäärä
+      <input type="date" name="starttime" onload="getDate()" id="formDate"/>
+            Valmistumispäivämäärä  (Jätä tyhjäksi jos aiheen opiskelu on kesken)
+            <input type="date" name="starttime" onload="getDate()" id="formDateFinished" />
+      <input type="button" id="addTopic" value="Lähetä" />
+    </fieldset>
+  </form>
+  <div id="topics"></div>
+  <script type="text/javascript" src="./javascripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+.navigation {
+    margin: 20px;
+}
+
+h1.navigationHead {
+    float: right;
+}
+
+a.navigationButton {
+    padding: 10px;
+}
